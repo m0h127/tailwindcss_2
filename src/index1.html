@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo2-Index1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/styles.css">    
+</head>
+<body>
+    <header>
+        <nav class="w-full bg-blue-500 min-h-16">
+            <div class="flex items-center justify-between">
+                <div class="logo">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <button class="block md:hidden p-5 bg-white" data-collapse-toggle="mymenu"> 
+                    X
+                </button>
+                <div class="hidden md:block z-50 absolute top-16 right-0 md:top-0 w-full max-w-sm" id="mymenu">
+                    <ul class="bg-gray-100 flex flex-col md:flex md:flex-row items-center">
+                        <li class="p-5 hover:bg-white hover:text-blue-600"><a href="">Home</a></li>
+                        <li class="p-5 hover:bg-white hover:text-blue-600"><a href="">Products</a></li>
+                        <li class="p-5 hover:bg-white hover:text-blue-600"><a href="">Services</a></li>
+                        <li class="p-5 hover:bg-white hover:text-blue-600 bg-yellow-500"><button class="hover:text-blue-500" data-modal-target="mymodal" data-modal-toggle="mymodal">Login</button></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="hidden z-50 absolute top-10 right-1/2 max-w-md mx-auto w-full border border-gray-800 rounded-full" id="mymodal">
+            <div class="block w-full">
+                <div class="w-full modal-header bg-blue-500 flex items-center justify-between p-5">
+                    <h2 class="text-white">Login Form</h2>
+                    <button class="text-white" data-modal-hide="mymodal">X</button>
+                </div>
+            
+            <div class="modal-body w-full block p-3 bg-gray-100">
+                <form action="">
+                    <div>
+                        <label for="" class="w-full block">Username</label>
+                        <input type="text" name="username" id="" class="w-full block border border-gray-800">
+                    </div>
+                    <div>
+                        <label for="" class="w-full block">Password</label>
+                        <input type="password" name="password" id="" class="w-full block border border-gray-800">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer flex items-center justify-center bg-gray-100">
+                <button class="border border-blue-600 hover:bg-blue-600 hover:text-white p-3 m-3 rounded">Login</button>
+                <button class="border border-red-600 hover:bg-red-600 hover:text-white p-3 m-3 rounded" data-modal-hide="mymodal">Close</button>
+            </div> 
+        </div>   
+        </div>
+        <div class="main relative block w-full" id="mycarousel" data-carousel="slide">
+            <div class="wrapper relative h-96">
+                <div class="item hidden duration-700 ease-in-out active" data-carousel-item>
+                    <img src="../public/images/img-4.jpg" alt="" class="block w-full h-96">
+                </div>
+                <div class="item hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../public/images/img-6.jpg" alt="" class="block w-full h-96">
+                </div>
+                <div class="item hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../public/images/img-3.jpg" alt="" class="block w-full h-96">
+                </div>
+            </div>
+            <div class="indicators absolute right-10 bottom-1/2 z-50 flex flex-col gap-5">
+                <button class="w-5 h-5 rounded-full bg-blue-500" data-carousel-slide-to="0">
+
+                </button>
+                <button class="w-5 h-5 rounded-full bg-blue-500" data-carousel-slide-to="1">
+                    
+                </button>
+                <button class="w-5 h-5 rounded-full bg-blue-500" data-carousel-slide-to="2">
+                    
+                </button>
+            </div>
+            <div class="controls absolute left-10 bottom-1/2 z-50 flex flex-col gap-3">
+                <button class="previous w-5 h-5 rounded-full bg-blue-500 text-gray-100" data-carousel-prev>
+                    &lt;
+                </button>
+                <button class="next w-5 h-5 rounded-full bg-blue-500 text-gray-100" data-carousel-next>
+                    &gt;
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg-blue-700 text-gray-100 text-center">
+            Registration
+        </div>
+        <div class="mx-auto max-w-sm px-12 border-2 border-black py-10">
+                <form action="">
+                    <label for="" class="block w-full p-2 text-blue-800 font-medium">Username</label>
+                    <input type="text" name="username" id="" class="block w-full rounded-full border border-gray-800 bg-gray-400 text-white p-2 placeholder:text-white" placeholder="Enter Username">
+                    <label for="" class="block w-full p-2 text-blue-800 font-medium">Email</label>
+                    <input type="email" name="email" id="" class="block w-full rounded-full border border-gray-800 bg-gray-400 text-white p-2 placeholder:text-white" placeholder="Enter Email">
+                    <label for="" class="block w-full p-2 text-blue-800 font-medium">Password</label>
+                    <input type="password" name="password" id="" class="block w-full rounded-full border border-gray-800 bg-gray-400 text-white p-2 placeholder:text-white" placeholder="Enter Password">
+                    <div class="mt-5">
+                        <input type="radio" name="gender" class="text-white" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" class="text-white" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="m-5">
+                        <select name="" id="" class="block w-full border border-gray-600 rounded-md p-2">
+                            <option value="">Myanmar</option>
+                            <option value="">Thailand</option>
+                            <option value="">Singapore</option>
+                            <option value="">Malaysia</option>
+                        </select>
+                    </div>
+                    <div class="mt-5">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">Agree to terms and conditions</label>
+                    </div>
+                </form> 
+                <div class="m-5 flex justify-center gap-2">
+                    <button class="w-auto p-2 border border-blue-800 rounded-full hover:bg-blue-600 hover:text-white">Register</button>
+                    <button class="w-auto p-2 border border-red-800 rounded-full hover:bg-red-600 hover:text-white">Cancel</button>
+                </div>  
+        </div>   
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
